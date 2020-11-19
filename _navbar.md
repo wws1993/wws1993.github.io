@@ -1,15 +1,6 @@
-<!--
- * @Description: 导航栏
- * @Author: wws1993
- * @Date: 2020-11-18 15:27:37
- * @LastEditTime: 2020-11-18 15:36:22
- * @LastEditors: wws1993
- * @FilePath: \docs\_navbar.md
--->
 
 * 入门
 
-  * [vuep](demo/vuep.md)
   * [多页文档](zh-cn/more-pages.md)
   * [定制导航栏](zh-cn/custom-navbar.md)
   * [封面](zh-cn/cover.md)
