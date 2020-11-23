@@ -7,16 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css">
-  <script src='//unpkg.com/@waline/client/dist/Waline.min.js'></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    #waline{position:fixed; right:0; width:30vw; bottom:0; height:400px;}
+    .content{overflow-y:auto;}
+    .content::-webkit-scrollbar{width:7px; background:#fff;}
+    .content::-webkit-scrollbar-thumb{width:7px; border-radius:7px; background:#0074d9;}
+
+    body:not(.ready) .app-nav, body:not(.ready)>nav, body:not(.ready) [data-cloak]{display:block;}
+    nav ul{padding-left:0;}
   </style>
 </head>
 
 <body>
-  <div id="app">加载中</div>
-  <div id="waline"></div>
+  <div id="app"></div>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('sw.js')
@@ -47,11 +50,6 @@
       },
     }
 
-    new Waline({
-      el: '#waline',
-      path: location.pathname,
-      serverURL: 'https://wws1993-github-io.vercel.app'
-    });
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
